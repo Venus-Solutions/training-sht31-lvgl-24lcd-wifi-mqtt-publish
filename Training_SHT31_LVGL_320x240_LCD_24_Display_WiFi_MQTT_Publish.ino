@@ -107,7 +107,7 @@ void loop() {
       lv_chart_set_next(chart, ser_Humi, h);
 
       String toPublish = String(t) + "," + String(h);
-      mqtt.publish(mqttPublishTopic, toPublish.c_str());   //<==========แก้ให้ไม่เหมือนกัน
+      mqtt.publish(mqttPublishTopic, toPublish.c_str());
     }
 
     else{
